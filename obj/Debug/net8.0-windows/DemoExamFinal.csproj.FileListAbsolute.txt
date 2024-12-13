@@ -19,3 +19,5 @@ D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\refint\DemoExamFinal.dll
 D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\DemoExamFinal.pdb
 D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\DemoExamFinal.genruntimeconfig.cache
 D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\ref\DemoExamFinal.dll
+D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\DemoExamFinal.Form2.resources
+D:\repos\DemoExamFinal\obj\Debug\net8.0-windows\DemoExamFinal.sourcelink.json

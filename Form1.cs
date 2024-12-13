@@ -5,7 +5,7 @@ namespace DemoExamFinal
     {
         public MySqlConnection conn;
         public MySqlCommand cmd;
-        List<Partner> partners = new List<Partner>();
+        public List<Partner> partners = new List<Partner>();
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace DemoExamFinal
             listBox1.Items.Clear();
             while (reader.Read())
             {
-                var tmp = new Partner(reader.GetInt32(0),reader.GetString(2), reader.GetString(4));
+                var tmp = new Partner(reader.GetInt32(0), reader.GetString(2), reader.GetString(4));
                 partners.Add(tmp);
                 listBox1.Items.Add(
                     $"{reader.GetString(1)} {reader.GetString(2)} {reader.GetString(3)} {reader.GetString(4)} {reader.GetString(5)} {reader.GetInt32(6)} {reader.GetString(7)} {reader.GetInt32(8)} ");
@@ -38,7 +38,6 @@ namespace DemoExamFinal
                     {
                         item.SetDiscount(reader.GetInt32(1));
                     }
-                    
                 }
             }
             conn.Close();
@@ -46,6 +45,15 @@ namespace DemoExamFinal
             foreach (var item in partners)
             {
                 listBox1.Items.Add($"Название:{item.name} Скидка:{item.discount}");
+            }
+        }
+        Form2 form2;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (form2 == null)
+            {
+                form2 = new Form2(partners);
+                form2.Show();
             }
         }
     }

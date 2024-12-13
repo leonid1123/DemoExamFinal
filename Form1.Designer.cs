@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             listBox1 = new ListBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -39,11 +40,23 @@
             listBox1.Size = new Size(1564, 424);
             listBox1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 12F);
+            button1.Location = new Point(12, 451);
+            button1.Name = "button1";
+            button1.Size = new Size(163, 99);
+            button1.TabIndex = 1;
+            button1.Text = "Изменение информации о партнерах";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1588, 450);
+            ClientSize = new Size(1595, 562);
+            Controls.Add(button1);
             Controls.Add(listBox1);
             Name = "Form1";
             Text = "Form1";
@@ -54,5 +67,6 @@
         #endregion
 
         private ListBox listBox1;
+        private Button button1;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoExamFinal
 {
-    internal class Partner
+    public class Partner
     {
         public int id {  get; private set; }
         public string name { get; private set; }
